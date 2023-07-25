@@ -1,0 +1,26 @@
+{
+    "scripts": {
+        "dev": "wrangler dev --remote",
+        "deploy": "wrangler deploy --minify",
+        "prettier": "prettier --write .",
+        "lint": "eslint . --ext .ts",
+        "prettier:check": "prettier --check .",
+        "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+        "hono": "^3.3.2",
+        "prettier": "^3.0.0"
+    },
+    "devDependencies": {
+        "@cloudflare/workers-types": "^4.20230628.0",
+        "@typescript-eslint/eslint-plugin": "^5.52.0",
+        "eslint": "^8.45.0",
+        "eslint-config-standard-with-typescript": "^37.0.0",
+        "eslint-plugin-import": "^2.25.2",
+        "eslint-plugin-json": "^3.1.0",
+        "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+        "eslint-plugin-promise": "^6.0.0",
+        "typescript": "*",
+        "wrangler": "^3.1.2"
+    }
+}
